@@ -15,6 +15,8 @@ public class SocketServidor {
     public static void main(String[] args) {
         try{
             DatagramSocket servidor = new DatagramSocket(1026);
+            
+            System.out.println("O servidor foi inicializado na porta:"+servidor.getLocalPort());
                             
             byte[] mensagem = new byte[256];
             
